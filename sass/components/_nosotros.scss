@@ -1,0 +1,32 @@
+/*nosotros*/
+
+.nosotros{
+    display: flex;
+    flex-direction: wrap;
+    margin-bottom: 50px;
+
+
+    &__lampara{
+        width: 80%;
+        height: 80%;
+        margin-left: 100px;
+        margin-top: 30px;    
+    }
+
+    &__portavela{
+        width: 80%;
+        height: 90%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__texto{
+        text-align: justify;
+        margin-right: 100px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 80px;
+        width: 82%;
+        line-height: 2;
+    }
+}

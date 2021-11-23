@@ -15,80 +15,79 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Css-->
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="sass/main.css">
     <title>Nosotros</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <nav class="container-fluid">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                </li>
+            </ul>
+        </nav>   
         <!--portada-->
-        <div class="container portada">
-            <h1>AFRIKA</h1>
-            <h2 class="encabezado">Artesanías y algo más</h2>
-        </div>
-        <div>  
-            <!--menu-->         
-            <nav class="container">
-                <ul class="bannerMenu">
-                    <li>
-                        <a href="/index.html">Home</a> 
-                    </li>
-                    <li> 
-                        <a href="#nuestrosProductos">Productos</a>
-                        <!--Esto es un menu desplegable-->
-                            <ul class="menuDesplegable">
-                                <li>
-                                    <a href="#lamparasdeSal">Lámparas de sal</a>
-                                </li>
-                                <li>
-                                    <a href="#portasahumerios">Portasahumerios</a>
-                                </li>
-                            </ul>
-                    </li>
-                    <li>
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="preguntasFrecuentes.html">Preguntas frecuentes</a> 
-                    </li>
-                    <li>
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                </ul>               
-            </nav>
-        </div>
+        <div class="container-fluid header__portada">
+            <h1 class="header__portada__h1">AFRIKA</h1>
+            <img src="Fotos/logo.jpg" alt="logo" width="200px" height="190px" class="header__portada__logo">
+        </div>                        
     </header>
     <main>
-        <h2>¿Quiénes somos?</h2>
-            <p class="container nosotros">Mi nombre es Susana, nací en la provincia de Buenos Aires y me mudé a Mar del Plata hace muchos años, con mi primer matrimonio. Desde antaño quise dedicarme a la artesanía y a las bellas artes. Por una cuestión de economía, nunca pude estudiar en un instituto, pero sí siempre tuve en claro que en mi futuro me iba a dedicar a lo que amo.<br>
-            Por suerte, el futuro llegó hace rato, y con mi compañero de vida, Marcelo, nos dedicamos a la artesanía hace casi 10 años. Empezamos haciendo pruebas de moldes, cuadros, piezas en yeso, y nos fumos puliendo poco a poco. <br>
-            Casi al año de haber empezado, nos adentramos a una feria artesanal, que hoy también mi lugar de trabajo. Nos recibieron muy bien, les gustó nuestro producto, y aca estamos! firmes todavía en el mismo lugar en la plaza Mitre, donde se encuentra la Catedral de Mar del Plata. <br>
-        Todas las piezas las realizamos con mi compañero: desde el moldeado, el secado de yeso, la pintura, la conexión de las lámparas de sal y las terminaciones; realmente es un gran trabajo el que hacemos juntos.
-            </p>
-        <h2>¿Por qué lamparas de sal?</h2>
-            <p class="container nosotros">
-            Además de la decoración y de su belleza por sí sola, fuimos investigando todos los beneficios de las sales del Himalaya incluso en nuestra casa: la energía que transporta, la calidez que genera en el ambiente, la carga de iones en sus sales; realmente se sentía muy acogedor y placentero, y pensamos que podíamos hacerles sentir a las demás personas lo mismo, compartiendo nuestro arte y amor por lo que hacemos, generar decoración en un espacio y también ayudar en el equilibrio de la salud y el cuerpo.
-            Esperamos que disfruten como nosotros de estas bellezas, y que puedan encontrarles un lugar cálido en sus casas o incluso para regalar a sus seres queridos.
-            <br>
-            <br>
-            Susana y Marcelo.
-            </p>
+        <h2 class="titulo">¿Quiénes somos?</h2>
+        <section class="nosotros">
+            <div>
+                <img src="Fotos/lamparadesal.jpg" alt="Lampara de sal" class="nosotros__lampara" loading="lazy">
+            </div>
+            <div>            
+                <p class="container nosotros__texto">Mi nombre es Susana, nací en la provincia de Buenos Aires y me mudé a Mar del Plata hace muchos años, con mi primer matrimonio. Desde antaño quise dedicarme a la artesanía y a las bellas artes. Por una cuestión de economía, nunca pude estudiar en un instituto, pero sí siempre tuve en claro que en mi futuro me iba a dedicar a lo que amo.<br>
+                Por suerte, el futuro llegó hace rato, y con mi compañero de vida, Marcelo, nos dedicamos a la artesanía hace casi 10 años. Empezamos haciendo pruebas de moldes, cuadros, piezas en yeso, y nos fumos puliendo poco a poco. <br>
+                Casi al año de haber empezado, nos adentramos a una feria artesanal, que hoy también mi lugar de trabajo. Nos recibieron muy bien, les gustó nuestro producto, y aca estamos! firmes todavía en el mismo lugar en la plaza Mitre, donde se encuentra la Catedral de Mar del Plata. <br>
+            Todas las piezas las realizamos con mi compañero: desde el moldeado, el secado de yeso, la pintura, la conexión de las lámparas de sal y las terminaciones; realmente es un gran trabajo el que hacemos juntos.
+                </p>
+            </div>
+        </section> 
+        <h2 class="titulo">¿Por qué lamparas de sal?</h2>
+        <section class="nosotros">           
+            <div>
+                <p class="container nosotros__texto">
+                Además de la decoración y de su belleza por sí sola, fuimos investigando todos los beneficios de las sales del Himalaya incluso en nuestra casa: la energía que transporta, la calidez que genera en el ambiente, la carga de iones en sus sales; realmente se sentía muy acogedor y placentero, y pensamos que podíamos hacerles sentir a las demás personas lo mismo, compartiendo nuestro arte y amor por lo que hacemos, generar decoración en un espacio y también ayudar en el equilibrio de la salud y el cuerpo.
+                Esperamos que disfruten como nosotros de estas bellezas, y que puedan encontrarles un lugar cálido en sus casas o incluso para regalar a sus seres queridos.
+                <br>
+                <br>
+                Susana y Marcelo.
+                </p>
+            </div> 
+            <div>
+                <img src="Fotos/portavela.jpg" alt="Portavela" class="nosotros__portavela" loading="lazy">
+            </div>
+        </section>
     </main>
     <footer>
-        <nav class="container">
-            <ul class="bannerMenu">
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=+542235932839" target="_blank" title="Acceso directo a nuestro contacto de whatsapp"><i class="fab fa-whatsapp"></i></a> 
+        <nav>
+            <ul class="nav justify-content-center footer">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Volver</a>
                 </li>
-                <li>
-                    <a href="https://www.facebook.com/Afrikaa-101009368446256/?ref=pages_you_manage" target="_blank" title="Acceso directo a nuestro facebook"><i class="fab fa-facebook"></i></a>         
+                <li class="nav-item">
+                    <a class="nav-link" href="https://api.whatsapp.com/send?phone=+542235932839" target="_blank" title="Acceso directo a nuestro contacto de whatsapp"><i class="fab fa-whatsapp"></i></a>
                 </li>
-                <li>
-                    <a href="https://goo.gl/maps/psKTvcjw9g4qMF7n8" target="_blank" title="Ubicación en google maps de donde encontrarnos en Mar del Plata">Ubicación <i class="fas fa-map-marker-alt" ></i></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/Afrikaa-101009368446256/?ref=pages_you_manage" target="_blank"> <i class="fab fa-facebook"></i></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://goo.gl/maps/psKTvcjw9g4qMF7n8" target="_blank" title="Ubicacion en google maps de donde encontrarnos en Mar del Plata"><i class="fas fa-map-marker-alt" ></i></a>
+                </li>          
             </ul>
         </nav>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 </html>

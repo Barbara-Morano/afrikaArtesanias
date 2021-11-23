@@ -15,142 +15,94 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Css-->
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="sass/main.css">
     <title>Afrika Artesanías</title>
 </head>
 <!--Acá comienza mi página web-->
 <body>
-    <header>
+    <header class="header">
+        <nav class="container-fluid">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nuestrosProductos">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                </li>
+            </ul>
+        </nav>   
         <!--portada-->
-        <div class="container portada">
-            <h1>AFRIKA</h1>
-            <h2 class="encabezado">Artesanías y algo más</h2>
-        </div>
-        <div>  
-            <!--menu-->         
-            <nav class="container">
-                <ul class="bannerMenu">
-                    <li>
-                        <a href="/index.html">Home</a> 
-                    </li>
-                    <li> 
-                        <a href="#nuestrosProductos">Productos</a>
-                        <!--Esto es un menu desplegable-->
-                            <ul class="menuDesplegable">
-                                <li>
-                                    <a href="#lamparasdeSal">Lámparas de sal</a>
-                                </li>
-                                <li>
-                                    <a href="#portasahumerios">Portasahumerios</a>
-                                </li>
-                            </ul>
-                    </li>
-                    <li>
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="preguntasFrecuentes.html">Preguntas frecuentes</a> 
-                    </li>
-                    <li>
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                </ul>
-                
-            </nav>
-        </div>
+        <div class="container-fluid header__portada">
+            <h1 class="header__portada__h1">AFRIKA</h1>
+            <img src="Fotos/logo.jpg" alt="logo" loading="lazy" width="200px" height="190px" class="header__portada__logo">
+        </div>                        
     </header>
     <main>
         <!--introducción-->
-        <h2>¿QUÉ SON LAS LÁMPARAS DE SAL?</h2>
-        <section class="container introduccion">
-            <div>
-                <div>
-                    <div class="container">
-                        <p class="introduccion__parrafo">Son rocas naturales que tienen su origen en el Himalaya. Se forman a partir de distintos minerales y dentro se le puede colocar una vela o bombilla.<br><br>Tienen la capacidad de cambiar la carga eléctrica del aire, ionizándolo negativamente. Esto quiere decir que atrapa los iones positivos (perjudiciales para nuestra salud) y emiten iones negativos (que producen un efecto beneficioso)Esto lo consigue gracias a la capacidad higroscópica de la Sal. Esta cualidad hace que la sal atraiga las moléculas de agua existentes en el aire, en su mayoría iones positivos (perjudiciales para la salud) que permanecerán atrapados en la sal, en lugar de circular en el aire. Además, cuando la sal se calienta, bien por la vela o por la bombilla, libera vapor de agua limpio de nuevo en el aire, expulsando iones negativos (beneficiosos para la salud).</p>
-                    </div>
-                    <div class="container">                 
-                        <img src="fotos/lamparadesal.jpg" alt="Lampara de sal" loading="lazy" width="40%" height="50%" class="imagen1"> 
-                    </div>                  
-                </div>
+        <div><h2 class="titulo">¿QUÉ SON LAS LÁMPARAS DE SAL?</h2></div>       
+        <section class="introduccion">            
+            <div class="introduccion__imagen">        
+                <img src="fotos/imagenencabezado.jpg" alt="Lampara de sal" loading="lazy" width="70%" height="70%" class="introduccion__imagen__lampara">
             </div>
+            <div class="introduccion__texto">         
+                <p class="introduccion__texto__parrafo">
+                    Son rocas naturales que tienen su origen en el Himalaya. Se forman a partir de distintos minerales y dentro se le puede colocar una vela o bombilla.<br><br>Tienen la capacidad de cambiar la carga eléctrica del aire, ionizándolo negativamente. Esto quiere decir que atrapa los iones positivos (perjudiciales para nuestra salud) y emiten iones negativos (que producen un efecto beneficioso)Esto lo consigue gracias a la capacidad higroscópica de la Sal. Esta cualidad hace que la sal atraiga las moléculas de agua existentes en el aire, en su mayoría iones positivos (perjudiciales para la salud) que permanecerán atrapados en la sal, en lugar de circular en el aire. Además, cuando la sal se calienta, bien por la vela o por la bombilla, libera vapor de agua limpio de nuevo en el aire, expulsando iones negativos (beneficiosos para la salud).<br><br>
+                    Entre sus principales beneficios: limpian el aire; reducen la alergia y asma; protegiendo nuestros pulmones; aumentan la energía; ayudan a conciliar el sueño; neutralizan las radiaciones electromagnéticas.
+                </p>                
+            </div>                  
         </section>
         <!--productos-->
-        <section>
-            <div>
-                <h2 id="#nuestrosProductos" class="tituloDos">Nuestros productos</h2>
-            </div>
-            <div>
-                <h2 id="lamparasdeSal">Lámparas de sal</h2>
-            </div>  
+        <section>            
             <div class="productos">
-                    <div class="card" style="width: 25rem;">
-                        <img src="Fotos/Lamparas de sal/lampara1.jpg" class="card-img-top" alt="Lámpara de Sal con pieza de mujer Africana" loading="lazy">
-                        <div class="card-body">
-                            <p class="card-text">
-                                MUJER AFRICANA <br> $1500
-                                <div>
-                                    <button type="button" class="btn btn-secondary">Agregar al carrito</button>
-                                </div>
-                            </p>
-                        </div>
+                <h2 id="nuestrosProductos" class="productos__tituloDos">Nuestros productos</h2>
+            </div> 
+            <div class="productos__lamparas">
+                <div class="card" style="width: 25rem;">
+                    <img src="Fotos/Lamparas de sal/lampara1.jpg" class="card-img-top" alt="Lámpara de Sal con pieza de mujer Africana" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">
+                            MUJER AFRICANA <br> Precio: $1500
+                        </p>
+                    </div>                        
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="Fotos/Lamparas de sal/lampara2.jpg" class="card-img-top" alt="Lámpara de sal con pieza de buda" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">
+                            BUDA <br> Precio $1500
+                        </p>
+                    </div>                        
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="Fotos/Lamparas de sal/lampara3.jpg" class="card-img-top" alt="Lámpara de sal con pieza Ganesha" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">
+                            GANESHA <br> $1500
+                        </p>
                     </div>
-                    <div class="card" style="width: 25rem;">
-                        <img src="Fotos/Lamparas de sal/lampara2.jpg" class="card-img-top" alt="Lámpara de sal con pieza de buda" loading="lazy">
-                        <div class="card-body">
-                            <p class="card-text">
-                                BUDA <br> $1500
-                                <div>
-                                    <button type="button" class="btn btn-secondary">Agregar al carrito</button>
-                                </div>
-                            </p>
-                        </div>
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="Fotos/Lamparas de sal/lampara4.jpg" class="card-img-top" alt="Lámpara de sal con pieza elefante" loading="lazy" >
+                    <div class="card-body">
+                        <p class="card-text">
+                            ELEFANTE <br> Precio: $1500                                
+                        </p>
                     </div>
-                    <div class="card" style="width: 25rem;">
-                        <img src="Fotos/Lamparas de sal/lampara3.jpg" class="card-img-top" alt="Lámpara de sal con pieza Ganesha" loading="lazy">
-                        <div class="card-body">
-                            <p class="card-text">
-                                GANESHA <br> $1500
-                                <div>
-                                    <button type="button" class="btn btn-secondary">Agregar al carrito</button>
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 25rem;">
-                        <img src="Fotos/Lamparas de sal/lampara4.jpg" class="card-img-top" alt="Lámpara de sal con pieza elefante" loading="lazy" >
-                        <div class="card-body">
-                            <p class="card-text">
-                                ELEFANTE <br> $1500
-                                <div>
-                                    <button type="button" class="btn btn-secondary">Agregar al carrito</button>
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 25rem;">
-                        <img src="Fotos/Lamparas de sal/lampara5.jpg" class="card-img-top" alt="Lámparas de sal con pieza elefante" loading="lazy">
-                        <div class="card-body">
-                            <p class="card-text">
-                                PROMO ELEFANTE <br> $900 cada uno
-                                <div>
-                                    <button type="button" class="btn btn-secondary">Agregar al carrito</button>
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-            </div>  
-            <div>
-                <h2 id="portasahumerios">Portasahumerios y Portavelas</h2>
-            </div>
-            <div class="productos2">   
+                </div>                 
                 <div class="card" style="width: 25rem;">
                     <img src="Fotos/Portasahumerios/Portasah.1.jpg" class="card-img-top" alt="Portasahumerio buda" loading="lazy">
                     <div class="card-body">
                         <p class="card-text">
-                            BUDA <br> $300
-                            <div>
-                                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
-                            </div>
+                            BUDA <br> Precio: $300
                         </p>
                     </div>
                 </div>
@@ -158,46 +110,29 @@
                     <img src="Fotos/Portasahumerios/Portasah.2.jpg" class="card-img-top" alt="Portasahumerio buda colores negro y amarillo" loading="lazy">
                     <div class="card-body">
                         <p class="card-text">
-                            BUDA <br> Colores varios <br> $300
-                            <div>
-                                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
-                            </div>
+                            BUDA <br> Colores varios <br> Precio: $300
                         </p>
                     </div>
                 </div>
-                <div class="card" style="width: 25rem;">
-                    <img src="Fotos/Portasahumerios/velita.jpg" class="card-img-top" alt="Portavela ganesha" loading="lazy">
-                    <div class="card-body">
-                        <p class="card-text">
-                            PORTAVELA GANESHA <br> $300
-                            <div>
-                                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-                <div class="card" style="width: 25rem">
+                <div class="card productos__buda" style="width: 25rem;">
                     <img src="Fotos/Portasahumerios/velita2.jpg" class="card-img-top" alt="Portavela buda" loading="lazy">
                     <div class="card-body">
                         <p class="card-text">
-                            PORTAVELA BUDA <br> $300
-                            <div>
-                                <button type="button" class="btn btn-secondary">Agregar al carrito</button>
-                            </div>
+                            PORTAVELA BUDA <br> Precio: $300
                         </p>
                     </div>
                 </div>          
             </div> 
         </section>
         <!--formulario de contacto-->        
-        <section class="container">
-            <div>        
+        <section>
+            <div>       
                 <h2 id="contacto" class="tituloFormulario">Comunicate con nosotros</h2>
                 <p class="formularioParrafo">Escribinos tu consulta y te responderemos a la brevedad</p>
-            </div>
+            </div> 
             <div class="contenedorFormulario">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <div class="mb-1">
+                    <label for="exampleFormControlInput1" class="form-labe">Email</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
@@ -207,23 +142,20 @@
             </div>
         </section>      
     <footer>
-        <nav class="container">
-            <ul class="bannerMenu">
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=+542235932839" target="_blank" title="Acceso directo a nuestro contacto de whatsapp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a> 
+        <nav>
+            <ul class="nav justify-content-center footer">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Volver</a>
                 </li>
-                <li>
-                    <a href="https://www.facebook.com/Afrikaa-101009368446256/?ref=pages_you_manage" target="_blank" title="Acceso directo a nuestro facebook">
-                        <i class="fab fa-facebook"></i>
-                    </a>         
+                <li class="nav-item">
+                    <a class="nav-link" href="https://api.whatsapp.com/send?phone=+542235932839" target="_blank" title="Acceso directo a nuestro contacto de whatsapp"><i class="fab fa-whatsapp"></i></a>
                 </li>
-                <li>
-                    <a href="https://goo.gl/maps/psKTvcjw9g4qMF7n8" target="_blank" title="Ubicacion en google maps de donde encontrarnos en Mar del Plata"> 
-                        Ubicación <i class="fas fa-map-marker-alt" ></i>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/Afrikaa-101009368446256/?ref=pages_you_manage" target="_blank"> <i class="fab fa-facebook"></i></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://goo.gl/maps/psKTvcjw9g4qMF7n8" target="_blank" title="Ubicacion en google maps de donde encontrarnos en Mar del Plata"><i class="fas fa-map-marker-alt" ></i></a>
+                </li>          
             </ul>
         </nav>
     </footer>

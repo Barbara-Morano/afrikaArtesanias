@@ -15,80 +15,101 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Css-->
-    <link rel="stylesheet" href="estilos.css"/>
+    <link rel="stylesheet" href="sass/main.css"/>
     <title>Preguntas Frecuentes</title>
 </head>
 <!--Acá comienza mi página web-->
 <body>
-    <header>
-        <div class="container portada">
-            <h1>AFRIKA</h1>
-            <h2 class="encabezado">Artesanías y algo más</h2>
-        </div>
-        <div>
-            <nav class="container">
-                <ul class="bannerMenu">
-                    <li>
-                        <a href="/index.html">Home</a> 
-                    </li>
-                    <li> 
-                        <a href="index.html">Productos</a>
-                        <!--Esto es un menu desplegable-->
-                            <ul class="menuDesplegable">
-                                <li>
-                                    <a href="/index.html">Todos los productos</a>
-                                </li>
-                                <li>
-                                    <a href="/index.html">Lámparas de sal</a>
-                                </li>
-                                <li>
-                                    <a href="/index.html">Portasahumerios</a>
-                                </li>
-                            </ul>
-                    </li>
-                    <li>
-                        <a href="/index.html">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="preguntasFrecuentes.html">Preguntas frecuentes</a> 
-                    </li>
-                    <li>
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header">
+        <nav class="container-fluid">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                </li>          
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                </li>
+            </ul>
+        </nav>   
+        <!--portada-->
+        <div class="container-fluid header__portada">
+            <h1 class="header__portada__h1">AFRIKA</h1>
+            <img src="Fotos/logo.jpg" alt="logo" width="200px" height="190px" class="header__portada__logo">
+        </div>                        
     </header>
     <main >
         <div>
-            <h2>Preguntas Frecuentes</h2>
+            <h2 class="titulo">Preguntas Frecuentes</h2>
         </div>
-        <div class="preguntasFrecuentes">
-            <ol>
-                <li class="listaPreguntas">¿Como es el cuidado de las lámparas de sal?</li><br>
-                    <p class="parrafo">Las lámparas de sal deben permanecer encendidas, para que las sales no tomen humedad ni se deterioren.<br> Recomendamos encender las lámparas al menos media hora al día. Las sales se limpian con un paño seco, mismo la pieza de yeso.<br> No humedecer ni pasar productos abrasivos.</p>
-                <li class="listaPreguntas">¿Es necesario tener la lámpara prendida?</li><br>
-                    <p class="parrafo">No necesariamente tiene que estar encendida todo el día. Sí, como ya fue expuesto, recomendamos encenderla al menos media hora al dìa</p>  
-                <li class="listaPreguntas">Si me llegó roto el producto, ¿qué hago?</li><br>
-                    <p class="parrafo">Contactarnos a la brevedad si el producto llega en mal estado, enviando foto al whatsapp que figura en la página o mediante la casilla de correo.</p>
-            </ol>
-        </div>
+        <section>   
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    ¿Como es el cuidado de las lámparas de sal?
+                    </button>
+                    </h2>
+                </div>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <p class=acordion__texto>
+                        Las lámparas de sal deben permanecer encendidas, para que las sales no tomen humedad ni se deterioren Recomendamos encender las lámparas al menos media hora al día. Las sales se limpian con un paño seco, mismo la pieza de yeso. No humedecer ni pasar productos abrasivos.
+                        </p>
+                    </div>
+                </div> 
+            </div>               
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    ¿Es necesario tener la lámpara prendida?
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p class="acordion__texto">
+                        No necesariamente tiene que estar encendida todo el día. Sí, como ya fue expuesto, recomendamos encenderla al menos media hora al dìa
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Si me llegó roto el producto, ¿qué hago?
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p class="acordion__texto">
+                        Contactarnos a la brevedad si el producto llega en mal estado, enviando foto al whatsapp que figura en la página o mediante la casilla de correo.
+                        </p>
+                    </div>
+                <div>                
+            </div>       
+        </section>
     </main>
     <footer>
-        <nav class="container">
-            <ul class="bannerMenu">
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=+542235932839" title="Acceso directo a nuestro contacto de Whatsapp"><i class="fab fa-whatsapp"></i></a> 
+        <nav>
+            <ul class="nav justify-content-center footer">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Volver</a>
                 </li>
-                <li>
-                    <a href="https://www.facebook.com/Afrikaa-101009368446256/?ref=pages_you_manage"><i class="fab fa-facebook" title="Acceso directo a nuestro facebook"></i></a>         
+                <li class="nav-item">
+                    <a class="nav-link" href="https://api.whatsapp.com/send?phone=+542235932839" target="_blank" title="Acceso directo a nuestro contacto de whatsapp"><i class="fab fa-whatsapp"></i></a>
                 </li>
-                <li>
-                    <a href="https://goo.gl/maps/psKTvcjw9g4qMF7n8" title="Ubicación en google maps de donde encontrarnos en Mar del Plata">Ubicación <i class="fas fa-map-marker-alt"></i></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/Afrikaa-101009368446256/?ref=pages_you_manage" target="_blank"> <i class="fab fa-facebook"></i></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://goo.gl/maps/psKTvcjw9g4qMF7n8" target="_blank" title="Ubicacion en google maps de donde encontrarnos en Mar del Plata"><i class="fas fa-map-marker-alt" ></i></a>
+                </li>          
             </ul>
         </nav>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 </html>

@@ -1,0 +1,52 @@
+/* preguntas frecuentes*/
+
+
+.accordion-item{
+    background-color:rgb(254, 250, 224);
+    border: none; 
+    font-family: 'Fira Sans', sans-serif;    
+}
+
+.accordion-header{
+    text-decoration: none;
+    color: rgb(51, 61, 41);      
+    }
+
+.accordion-button{
+    background-color: rgb(233, 237, 201);  
+    width: 80%;
+    border:rgb(51, 61, 41);   
+    margin-bottom: 40px;
+    margin-left: 100px;
+    
+
+    &:focus{
+        background-color: rgb(233, 237, 201);
+        color:rgb(51, 61, 41);        
+    }
+
+    &:visited{
+        color:rgb(51, 61, 41);
+    }
+    
+    &:active{
+        color:rgb(51, 61, 41);
+        border: none;
+    }
+
+}
+
+.acordion-body{
+    margin: 0;
+}
+
+.acordion{
+    background-color:rgb(233, 237, 201);
+
+    &__texto{         
+        text-align: justify;     
+        width: 75%;  
+        margin-left: 170px;
+    }
+}
+
