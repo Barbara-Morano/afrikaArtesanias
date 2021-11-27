@@ -13,7 +13,7 @@
 .contenedorFormulario{
     width: 80%;
     margin-left: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 0;
 }
 
 .formularioParrafo{
@@ -23,4 +23,10 @@
 input:focus{
     height: 27px;
     font-size: 25px;
+}
+
+.boton{    
+    margin-left: 150px;
+    margin-bottom: 70px;
+    margin-top: 0;
 }

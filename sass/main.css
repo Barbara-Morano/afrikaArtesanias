@@ -44,7 +44,7 @@
   font-weight: 800;
   font-size: 17px;
   background-color: #e9edc9;
-  border: solid #333d29 1px;
+  line-height: 2;
   padding: 6px;
 }
 
@@ -66,7 +66,7 @@
 .contenedorFormulario {
   width: 80%;
   margin-left: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 0;
 }
 
 .formularioParrafo {
@@ -76,6 +76,12 @@
 input:focus {
   height: 27px;
   font-size: 25px;
+}
+
+.boton {
+  margin-left: 150px;
+  margin-bottom: 70px;
+  margin-top: 0;
 }
 
 /* preguntas frecuentes*/
