@@ -1,0 +1,21 @@
+/* Extend */
+
+%bordes{
+    border: solid 1px $color-secundario;
+}
+
+
+/* Mixin */
+
+@mixin flexbox ($display, $wrap, $justify){
+    display: $display;       
+    flex-wrap: $wrap;        
+    justify-content: $justify;
+}
+    
+@mixin margenes ($left, $right, $top, $bottom){
+    margin-left: $left;
+    margin-right: $right;
+    margin-top: $top;
+    margin-bottom: $bottom;
+}

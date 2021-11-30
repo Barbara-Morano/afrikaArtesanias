@@ -1,0 +1,41 @@
+/*Header*/
+
+.header{
+    margin: 0;
+    padding: 0;
+    
+    &__portada{
+    background-color: white;           
+    height: 250px;
+    padding: 40px; 
+    @include flexbox (flex, row, center);
+
+        &__h1{                           
+        font-size: 150px;
+        color: black;
+        } 
+    }  
+
+    nav, .footer{                
+        padding: 10px;
+        background-color: $color-principal2;
+        margin: 0;                
+    }
+
+    a{   
+        color: $color-secundario;             
+        font-weight: bolder;
+        padding: 10px;                
+        font-size: 20px;
+        text-decoration: none;
+
+        &:hover{                    
+            background-color: white;
+            color:saddlebrown;
+        }
+
+        &:active{
+            color: black;
+        }
+    }
+}

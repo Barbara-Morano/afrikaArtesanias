@@ -2,35 +2,33 @@
 
 
 .accordion-item{
-    background-color:rgb(254, 250, 224);
+    background-color: $color-principal;
     border: none; 
-    font-family: 'Fira Sans', sans-serif;    
+    font-family: $fuente;    
 }
 
 .accordion-header{
     text-decoration: none;
-    color: rgb(51, 61, 41);      
+    color: $color-secundario;      
     }
 
 .accordion-button{
-    background-color: rgb(233, 237, 201);  
+    background-color: $color-principal2;  
     width: 80%;
-    border:rgb(51, 61, 41);   
-    margin-bottom: 40px;
-    margin-left: 100px;
+    border:$color-secundario;   
+    @include margenes (100px, auto, auto, 40px);
     
-
     &:focus{
-        background-color: rgb(233, 237, 201);
-        color:rgb(51, 61, 41);        
+        background-color: $color-principal2;
+        color: $color-secundario;        
     }
 
     &:visited{
-        color:rgb(51, 61, 41);
+        color: $color-secundario;
     }
     
     &:active{
-        color:rgb(51, 61, 41);
+        color: $color-secundario;
         border: none;
     }
 
@@ -41,7 +39,7 @@
 }
 
 .acordion{
-    background-color:rgb(233, 237, 201);
+    background-color: $color-principal2;
 
     &__texto{         
         text-align: justify;     

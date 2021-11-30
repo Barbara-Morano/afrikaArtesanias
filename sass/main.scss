@@ -1,105 +1,11 @@
+@import 'base/variables';
+@import 'base/extend';
+@import 'components/general';
+@import 'components/header';
+@import 'components/introduccion';
 @import 'components/productos';
 @import 'components/contacto';
-@import 'components/preguntasFrecuentes';
 @import 'components/nosotros';
+@import 'components/preguntasFrecuentes';
 @import 'components/footer';
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Fira Sans', sans-serif;
-
-    body{
-        background-color: rgb(254, 250, 224);
-        margin-top: 0;
-
-        .header{
-            margin: 0;
-            padding: 0;
-            
-            &__portada{
-            background-color: white;
-            border: solid 1px rgb(51, 61, 41);
-            height: 250px;
-            padding: 40px; 
-            display: flex;
-            flex-direction: row;      
-            justify-content:center; 
-    
-                &__h1{
-                color: black;           
-                font-size: 150px;
-                } 
-            }  
-
-            nav, .footer{
-                padding: 10px;
-                background-color: rgb(233, 237, 201);
-                margin: 0;
-                border: solid 0.5px rgb(254, 250, 224);
-            }
-
-            a{   
-                color: black;             
-                font-weight: bolder;
-                padding: 10px;
-                font-size: 20px;
-                text-decoration: none;
-
-                &:hover{                    
-                    background-color: white;
-                    color:saddlebrown;
-                }
-
-                &:active{
-                    color: black;
-                }
-            }
-        }
-
-            h2{
-                margin-left: 80px;
-                margin-top: 50px;
-                margin-bottom: 50px;
-                padding: 6px;
-                font-size: 2rem;
-                text-decoration: underline;
-                color: rgb(51, 61, 41);
-                }
-
-            .titulo{                
-                width: 100%;
-                margin-left: 0;
-                padding: 17px;
-                text-decoration: none;
-                margin-top: 2px;
-                background-color: rgb(233, 237, 201);
-                font-size: 30px;                
-            }
-
-            .introduccion{
-                display: flex;
-                flex-direction: row;
-                align-items: center;  
-                justify-content: center;   
-                margin-bottom: 10px;               
-                
-                &__imagen{
-                    margin-left: 150px;
-
-                    &__lampara{
-                        margin-top: -30px;
-                    }
-                }
-                
-                &__texto{
-                    width: 60%;
-                    text-align: justify;
-                    margin-top: 10px;
-                    margin-right: 150px;                   
-                    margin-left: -50px;
-                    letter-spacing: 4;
-                }                
-            }            
-        }
-    }

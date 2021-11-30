@@ -1,13 +1,12 @@
 .footer{
-    background-color: rgb(233, 237, 201);
-    border: solid 1px rgb(51, 61, 41);
+    background-color: $color-principal2;    
     margin-top: 0;
     width: 100%;
     padding: 30px;
 }
 
 .nav-link{
-    color:rgb(51, 61, 41);
+    color: $color-secundario;
     font-size: 20px;
     font-weight: 400;
 }

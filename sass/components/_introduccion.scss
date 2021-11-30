@@ -1,0 +1,41 @@
+/*Introduccion*/
+
+h2{
+    @include margenes (80px, auto, 50px, 50px);                
+    padding: 6px;
+    font-size: 2rem;
+    text-decoration: underline;
+    }
+
+.titulo{                
+    width: 100%;
+    @include margenes (0, 0, 2px, 70px);                
+    padding: 17px;
+    text-decoration: none;                
+    background-color: $color-principal2;
+    font-size: 30px;                
+}
+
+.introduccion{                
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: center;   
+    margin-bottom: 10px;               
+    
+    &__imagen{
+        margin-left: 150px;
+
+        &__lampara{
+            margin-top: -30px;
+        }
+    }
+    
+    &__texto{
+        width: 60%;
+        text-align: justify;
+        @include margenes (-50px, 150px, 10px, auto);
+        letter-spacing: 4;
+    }                
+}            
+
