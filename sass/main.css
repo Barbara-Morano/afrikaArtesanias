@@ -281,39 +281,40 @@ input:focus {
   background-color: #fefae0;
   border: none;
   font-family: "Fira Sans", sans-serif;
-}
-
-.accordion-header {
-  text-decoration: none;
-  color: #333d29;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .accordion-button {
-  background-color: #e9edc9;
-  width: 75%;
+  background-color: #cfe1b9;
   border: #333d29;
-  margin-left: 170px;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .accordion-button:focus {
-  background-color: #e9edc9;
+  background-color: #cfe1b9;
   color: #333d29;
-}
-
-.accordion-button:visited {
-  color: #333d29;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .accordion-button:active {
   color: #333d29;
   border: none;
+  background-color: #cfe1b9;
+}
+
+.accordion-header {
+  background-color: #cfe1b9;
+  border: none;
 }
 
 .acordion-body {
-  margin: 0;
+  margin: 10px;
 }
 
 .acordion {
@@ -322,8 +323,8 @@ input:focus {
 
 .acordion__texto {
   text-align: justify;
-  width: 75%;
-  margin-left: 170px;
+  width: 95%;
+  margin-left: 20px;
 }
 
 .footer {
@@ -424,12 +425,14 @@ input:focus {
   }
   /*preguntas frecuentes*/
   .accordion-button {
-    margin-left: 60px;
+    margin-left: 0;
     margin-bottom: 10px;
+    width: 100%;
   }
   .acordion__texto {
-    margin-left: 60px;
+    margin-left: 20px;
     margin-top: 0;
+    width: 90%;
   }
 }
 /*# sourceMappingURL=main.css.map */
