@@ -43,8 +43,8 @@
         }
 
         &__texto{
-            margin: 10px;
-            width: 97%;                 
+            margin: 20px;
+            width: 95%;                 
         }
     }
 
@@ -65,7 +65,7 @@
 
     .contenedorFormulario{
         margin-left: 10px;
-        width: 97%;
+        width: 95%;
     }
     
     .boton{
@@ -83,8 +83,13 @@
         }
 
         &__portavela{
-            margin-left: 70px;
-        }        
+            margin-left: 20px;
+        }  
+        
+        &__texto{
+            margin-left: 20px;
+            width: 95%;
+        }
     }
 
     /*preguntas frecuentes*/

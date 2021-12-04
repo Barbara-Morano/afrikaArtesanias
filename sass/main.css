@@ -367,8 +367,8 @@ input:focus {
     display: none;
   }
   .introduccion__texto {
-    margin: 10px;
-    width: 97%;
+    margin: 20px;
+    width: 95%;
   }
   /*productos*/
   .card {
@@ -383,7 +383,7 @@ input:focus {
   }
   .contenedorFormulario {
     margin-left: 10px;
-    width: 97%;
+    width: 95%;
   }
   .boton {
     margin-left: 10px;
@@ -402,7 +402,11 @@ input:focus {
     display: none;
   }
   .nosotros__portavela {
-    margin-left: 70px;
+    margin-left: 20px;
+  }
+  .nosotros__texto {
+    margin-left: 20px;
+    width: 95%;
   }
   /*preguntas frecuentes*/
   .accordion-button {
