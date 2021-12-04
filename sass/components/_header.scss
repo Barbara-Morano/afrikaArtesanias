@@ -3,13 +3,50 @@
 .header{
     margin: 0;
     padding: 0;
-    
+
+    nav{
+        background-color: $color-principal2;
+        margin: 0;
+        padding: 10px;
+        
+    }
+
+    &__boton{
+        background-color: $color-principal2;    
+        padding: 10px;
+        
+        &__bars{
+        font-size: 30px;                           
+        font-weight: bolder;
+        }
+
+        &:hover{
+            background-color: $color-principal;
+        }
+        &:checked{
+            background-color: $color-secundario;
+        }
+        &:active{
+            background-color: $color-secundario;
+            border: 1px ridge $color-secundario;
+        }
+    }
+
+    &__menu{
+        margin-left: -100px;
+
+        &__lista{
+            margin-left: -200px;
+            background-color: $color-principal2;
+        }
+    }
+
     &__portada{
     background-color: white;           
     height: 250px;
     padding: 40px; 
     @include flexbox (flex, row, center);
-
+    
         &__h1{                           
         font-size: 150px;
         color: black;
@@ -21,7 +58,7 @@
         }
     }  
 
-    nav, .footer{                
+    .footer{                
         padding: 10px;
         background-color: $color-principal2;
         margin: 0;                
@@ -31,16 +68,11 @@
         color: $color-secundario;             
         font-weight: bolder;
         padding: 10px;                
-        font-size: 20px;
+        font-size: 17px;
         text-decoration: none;
 
         &:hover{                    
-            background-color: white;
             color:saddlebrown;
-        }
-
-        &:active{
-            color: black;
         }
     }
 }

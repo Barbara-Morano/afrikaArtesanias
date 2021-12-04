@@ -20,25 +20,40 @@
 </head>
 <body>
     <header class="header">
-        <nav class="container-fluid">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-                </li>     
-                <li class="nav-item">
-                    <a class="nav-link" href="../#nuestrosProductos">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../#contacto">Contacto</a>
-                </li>      
-                <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
-                </li>
-            </ul>
-        </nav>   
+        <nav>
+            <div class="dropdown header__menu">
+                <button class="btn dropdown header__boton" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bars header__boton__bars"></i>
+                </button>
+                <ul class="dropdown-menu header__menu__lista" aria-labelledby="dropdownMenu2">
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <a href="/index.html">Home</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <a href="../#nuestrosProductos">Productos</a> 
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <a href="../#contacto">Contacto</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <a href="nosotros.html">Nosotros</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <a href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <!--portada-->
         <div class="container-fluid header__portada">
             <h1 class="header__portada__h1">AFRIKA</h1>

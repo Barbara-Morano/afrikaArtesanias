@@ -22,6 +22,44 @@
   padding: 0;
 }
 
+.header nav {
+  background-color: #e9edc9;
+  margin: 0;
+  padding: 10px;
+}
+
+.header__boton {
+  background-color: #e9edc9;
+  padding: 10px;
+}
+
+.header__boton__bars {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.header__boton:hover {
+  background-color: #fefae0;
+}
+
+.header__boton:checked {
+  background-color: #333d29;
+}
+
+.header__boton:active {
+  background-color: #333d29;
+  border: 1px ridge #333d29;
+}
+
+.header__menu {
+  margin-left: -100px;
+}
+
+.header__menu__lista {
+  margin-left: -200px;
+  background-color: #e9edc9;
+}
+
 .header__portada {
   background-color: white;
   height: 250px;
@@ -46,7 +84,7 @@
   height: 190px;
 }
 
-.header nav, .header .footer {
+.header .footer {
   padding: 10px;
   background-color: #e9edc9;
   margin: 0;
@@ -56,17 +94,12 @@
   color: #333d29;
   font-weight: bolder;
   padding: 10px;
-  font-size: 20px;
+  font-size: 17px;
   text-decoration: none;
 }
 
 .header a:hover {
-  background-color: white;
   color: saddlebrown;
-}
-
-.header a:active {
-  color: black;
 }
 
 /*Introduccion*/
@@ -257,9 +290,9 @@ input:focus {
 
 .accordion-button {
   background-color: #e9edc9;
-  width: 80%;
+  width: 75%;
   border: #333d29;
-  margin-left: 100px;
+  margin-left: 170px;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: 40px;
@@ -319,7 +352,6 @@ input:focus {
   }
   .header__portada__h1 {
     font-size: 90px;
-    margin-left: -100px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -334,28 +366,48 @@ input:focus {
   .introduccion__texto {
     margin-bottom: 10px;
     margin-top: 0;
-    margin-left: -110px;
   }
-  .productos__lamparas {
-    margin-left: -10px;
-  }
+  /*productos*/
   .card {
     margin: 30px;
   }
+  /*formulario*/
   .tituloFormulario {
     margin-bottom: 30px;
   }
   .formularioParrafo {
-    margin-left: 20px;
+    margin-left: 80px;
   }
   .contenedorFormulario {
-    margin-left: 20px;
+    margin-left: 80px;
   }
   .boton {
-    margin-left: 20px;
+    margin-left: 80px;
   }
-  .footer {
-    margin-left: -60px;
+  /*nosotros*/
+  .nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nosotros__lampara {
+    display: none;
+  }
+  .nosotros__portavela {
+    margin-left: 70px;
+  }
+  /*preguntas frecuentes*/
+  .accordion-button {
+    margin-left: 60px;
+    margin-bottom: 10px;
+  }
+  .acordion__texto {
+    margin-left: 60px;
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

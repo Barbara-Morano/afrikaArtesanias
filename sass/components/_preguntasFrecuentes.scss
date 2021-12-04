@@ -14,9 +14,9 @@
 
 .accordion-button{
     background-color: $color-principal2;  
-    width: 80%;
+    width: 75%;
     border:$color-secundario;   
-    @include margenes (100px, auto, auto, 40px);
+    @include margenes (170px, auto, auto, 40px);
     
     &:focus{
         background-color: $color-principal2;
@@ -29,7 +29,7 @@
     
     &:active{
         color: $color-secundario;
-        border: none;
+        border: none;        
     }
 
 }
