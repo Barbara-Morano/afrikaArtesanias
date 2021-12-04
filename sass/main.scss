@@ -44,6 +44,7 @@
 
         &__texto{
             margin: 20px;
+            margin-right: 20px;
             width: 95%;                 
         }
     }
@@ -83,11 +84,13 @@
         }
 
         &__portavela{
-            margin-left: 20px;
+            width: 90%;
+            margin-left: 40px;
         }  
         
         &__texto{
-            margin-left: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
             width: 95%;
         }
     }
