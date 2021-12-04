@@ -376,6 +376,14 @@ input:focus {
     margin-right: 10px;
   }
   /*productos*/
+  .productos {
+    width: 100%;
+  }
+  .productos__lamparas {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
   /*formulario*/
   .tituloFormulario {
     margin-bottom: 10px;
