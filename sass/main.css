@@ -360,29 +360,33 @@ input:focus {
     font-size: 25px;
     margin-bottom: 30px;
   }
+  .introduccion {
+    display: inline;
+  }
   .introduccion__imagen__lampara {
     display: none;
   }
   .introduccion__texto {
-    margin-bottom: 10px;
-    margin-top: 0;
+    margin: 10px;
+    width: 97%;
   }
   /*productos*/
   .card {
-    margin: 30px;
+    width: 100%;
   }
   /*formulario*/
   .tituloFormulario {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .formularioParrafo {
-    margin-left: 80px;
+    margin-left: 10px;
   }
   .contenedorFormulario {
-    margin-left: 80px;
+    margin-left: 10px;
+    width: 97%;
   }
   .boton {
-    margin-left: 80px;
+    margin-left: 10px;
   }
   /*nosotros*/
   .nosotros {
