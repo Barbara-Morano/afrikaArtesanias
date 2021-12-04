@@ -367,9 +367,12 @@ input:focus {
     display: none;
   }
   .introduccion__texto {
-    margin: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 95%;
+  }
+  .introduccion__texto__parrafo {
+    margin-left: 10px;
   }
   /*productos*/
   .card {
@@ -404,7 +407,8 @@ input:focus {
   }
   .nosotros__portavela {
     width: 90%;
-    margin-left: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .nosotros__texto {
     margin-left: 10px;
