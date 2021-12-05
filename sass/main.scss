@@ -58,17 +58,16 @@
     /*productos*/
 
     .productos{
-        width: 100%;        
-
+            
+        margin-left: 0;
+        padding-left: 0;
+        
         &__lamparas{
             padding: 0;          
             border: 0;
         }
     }
 
-    .card{ 
-        margin-left: 150px;
-    }
 
     /*formulario*/
 
