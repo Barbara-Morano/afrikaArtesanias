@@ -11,11 +11,11 @@
 
 @media only screen and (max-width: 768px){
     /*Home*/
+
     .header{    
         &__portada{  
             margin-left:0; 
-            padding: 20px;  
-            height: 120px;            
+            padding: 20px;              
 
             &__logo{
                 width: 90px; 
@@ -58,13 +58,16 @@
     /*productos*/
 
     .productos{
-        width: 100%;
+        width: 100%;        
 
         &__lamparas{
-            padding: 0;
-            margin: 0;
+            padding: 0;          
             border: 0;
         }
+    }
+
+    .card{ 
+        margin-left: 150px;
     }
 
     /*formulario*/
@@ -173,7 +176,7 @@
         &__texto{
             margin-left: 10px;
             margin-right: 10px;
-            width: 98%;
+            width: 95%;
             
             &__parrafo{           
                 margin-left: 10px;

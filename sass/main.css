@@ -346,7 +346,6 @@
   .header__portada {
     margin-left: 0;
     padding: 20px;
-    height: 120px;
   }
   .header__portada__logo {
     width: 90px;
@@ -383,8 +382,10 @@
   }
   .productos__lamparas {
     padding: 0;
-    margin: 0;
     border: 0;
+  }
+  .card {
+    margin-left: 150px;
   }
   /*formulario*/
   .formulario__titulo {
@@ -473,7 +474,7 @@
   .introduccion__texto {
     margin-left: 10px;
     margin-right: 10px;
-    width: 98%;
+    width: 95%;
   }
   .introduccion__texto__parrafo {
     margin-left: 10px;
