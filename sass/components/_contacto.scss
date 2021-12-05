@@ -1,28 +1,27 @@
 /* contacto */
 
-.tituloFormulario{
-    width: 100%;
-    @include margenes (0, auto, 20px, 50px);
-    padding: 17px;
-    text-decoration: none;    
-    background-color: $color-principal2;
-    font-size: 30px;
-}
+.formulario{
 
-.contenedorFormulario{
+    &__titulo{
+        width: 100%;
+        @include margenes (0, auto, 20px, 50px);
+        padding: 17px;
+        text-decoration: none;    
+        background-color: $color-principal2;
+        font-size: 30px;
+
+        &__parrafo{
+            margin-left: 150px;
+        }
+    }
+
+    &__contenedor{
     width: 80%;
     @include margenes (150px, auto, auto, 0);    
-}
-
-.formularioParrafo{
-    margin-left: 150px;
-}
-
-input:focus{
-    height: 27px;
-    font-size: 25px;
+    }
 }
 
 .boton{    
     @include margenes (150px, auto, 0, 70px); 
 }
+

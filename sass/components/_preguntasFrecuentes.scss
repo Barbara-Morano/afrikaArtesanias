@@ -1,21 +1,21 @@
 /* preguntas frecuentes*/
 
-
 .accordion-item{
     background-color: $color-principal;
     border: none; 
     font-family: $fuente;   
     margin-left: 40px; 
     margin-right: 40px;
+    @include margenes (40px, 40px, auto, auto);
     }
 
 .accordion-button{
-    background-color: rgb(207, 225, 185);
+    background-color: $color-acordeon;
     border:$color-secundario;   
     @include margenes (0, 0, 30px, 30px);
     
     &:focus{
-        background-color: rgb(207, 225, 185);;
+        background-color: $color-acordeon;
         color: $color-secundario;  
         outline: none;
         box-shadow: none;      
@@ -24,15 +24,15 @@
     &:active{
         color: $color-secundario;
         border: none;
-        background-color: rgb(207, 225, 185);        
+        background-color: $color-acordeon;        
     }
-
 }
 
 .accordion-header{
-    background-color: rgb(207, 225, 185);
+    background-color: $color-acordeon;
     border: none;  
 }
+
 .acordion-body{
     margin: 10px;
 }

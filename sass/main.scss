@@ -21,6 +21,7 @@
                 width: 90px; 
                 height: 90px;
                 }
+
             &__h1{
                 font-size: 70px;
                 justify-content: center;
@@ -55,29 +56,32 @@
     }
 
     /*productos*/
-.productos{
-    width: 100%;
 
-    &__lamparas{
-        padding: 0;
-        margin: 0;
-        border: 0;
+    .productos{
+        width: 100%;
+
+        &__lamparas{
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
     }
-}
 
     /*formulario*/
 
-    .tituloFormulario{
-        margin-bottom: 10px;
-    }
+    .formulario{
+        &__titulo{
+            margin-bottom: 10px;
+        
+            &__parrafo{
+                margin-left: 10px;
+            }
+        }
 
-    .formularioParrafo{
-        margin-left: 10px;
-    }
-
-    .contenedorFormulario{
-        margin-left: 10px;
-        width: 95%;
+        &__contenedor{
+            margin-left: 10px;
+            width: 95%;
+        }
     }
     
     .boton{
@@ -110,6 +114,10 @@
 
     /*preguntas frecuentes*/
     
+    .accordion-item{
+        margin-left: 0;
+        margin-right: 0;
+    }
     .accordion-button{
         margin-left: 0;
         margin-bottom: 10px;
@@ -118,9 +126,9 @@
 
     .acordion{
         &__texto{
-            margin-left: 20px;
+            margin-left: 0;
             margin-top: 0;
-            width: 90%;
+            width: 100%;
         }
     }
 

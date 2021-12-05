@@ -5,6 +5,7 @@
 }
 
 /* Mixin */
+/*general*/
 * {
   margin: 0;
   padding: 0;
@@ -204,7 +205,7 @@
 }
 
 /* contacto */
-.tituloFormulario {
+.formulario__titulo {
   width: 100%;
   margin-left: 0;
   margin-right: auto;
@@ -216,21 +217,16 @@
   font-size: 30px;
 }
 
-.contenedorFormulario {
+.formulario__titulo__parrafo {
+  margin-left: 150px;
+}
+
+.formulario__contenedor {
   width: 80%;
   margin-left: 150px;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: 0;
-}
-
-.formularioParrafo {
-  margin-left: 150px;
-}
-
-input:focus {
-  height: 27px;
-  font-size: 25px;
 }
 
 .boton {
@@ -283,6 +279,10 @@ input:focus {
   font-family: "Fira Sans", sans-serif;
   margin-left: 40px;
   margin-right: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .accordion-button {
@@ -327,6 +327,7 @@ input:focus {
   margin-left: 20px;
 }
 
+/*footer*/
 .footer {
   background-color: #e9edc9;
   margin-top: 0;
@@ -386,13 +387,13 @@ input:focus {
     border: 0;
   }
   /*formulario*/
-  .tituloFormulario {
+  .formulario__titulo {
     margin-bottom: 10px;
   }
-  .formularioParrafo {
+  .formulario__titulo__parrafo {
     margin-left: 10px;
   }
-  .contenedorFormulario {
+  .formulario__contenedor {
     margin-left: 10px;
     width: 95%;
   }
@@ -424,15 +425,19 @@ input:focus {
     width: 95%;
   }
   /*preguntas frecuentes*/
+  .accordion-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .accordion-button {
     margin-left: 0;
     margin-bottom: 10px;
     width: 100%;
   }
   .acordion__texto {
-    margin-left: 20px;
+    margin-left: 0;
     margin-top: 0;
-    width: 90%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

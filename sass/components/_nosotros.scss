@@ -4,12 +4,10 @@
     display: flex;
     margin-bottom: 50px;
 
-
     &__lampara{
         width: 80%;
         height: 80%;
-        @include margenes (90px, 0, 30px, auto);
-        
+        @include margenes (90px, 0, 30px, auto);        
     }
 
     &__portavela{

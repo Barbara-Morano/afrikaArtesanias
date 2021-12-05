@@ -7,8 +7,7 @@
     nav{
         background-color: $color-principal2;
         margin: 0;
-        padding: 10px;
-        
+        padding: 10px;       
     }
 
     &__boton{
@@ -23,9 +22,11 @@
         &:hover{
             background-color: $color-principal;
         }
+
         &:checked{
             background-color: $color-secundario;
         }
+
         &:active{
             background-color: $color-secundario;
             border: 1px ridge $color-secundario;
