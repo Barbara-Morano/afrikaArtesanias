@@ -473,7 +473,7 @@
   .introduccion__texto {
     margin-left: 10px;
     margin-right: 10px;
-    width: 95%;
+    width: 98%;
   }
   .introduccion__texto__parrafo {
     margin-left: 10px;
@@ -485,7 +485,7 @@
   }
   .productos__lamparas {
     padding: 0;
-    margin: 0;
+    margin-left: 60px;
     border: 0;
   }
   /*formulario*/
