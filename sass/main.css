@@ -442,6 +442,9 @@
 
 @media only screen and (max-width: 1024px) {
   /*Home*/
+  .header {
+    margin: 0;
+  }
   .header__portada {
     margin-left: 0;
     padding: 10px;
@@ -472,7 +475,7 @@
   .introduccion__texto {
     margin-left: 10px;
     margin-right: 10px;
-    width: 95%;
+    width: 100%;
   }
   .introduccion__texto__parrafo {
     margin-left: 10px;
@@ -522,8 +525,7 @@
   .nosotros__texto {
     margin-top: 10px;
     margin-left: 10px;
-    margin-right: 10px;
-    width: 95%;
+    width: 100%;
   }
   /*preguntas frecuentes*/
   .accordion-item {

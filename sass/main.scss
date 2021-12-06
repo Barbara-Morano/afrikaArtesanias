@@ -138,7 +138,9 @@
 
 @media only screen and (max-width: 1024px){
     /*Home*/
-    .header{    
+    .header{   
+        margin: 0;
+    
         &__portada{  
             margin-left:0; 
             padding: 10px;  
@@ -175,7 +177,7 @@
         &__texto{
             margin-left: 10px;
             margin-right: 10px;
-            width: 95%;
+            width: 100%;
             
             &__parrafo{           
                 margin-left: 10px;
@@ -235,9 +237,8 @@
         
         &__texto{
             margin-top: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-            width: 95%;
+            margin-left: 10px;            
+            width: 100%;
         }
     }
 
