@@ -53,11 +53,14 @@
         &__texto{
             margin-right: 0;
             padding: 0;
+            margin-left: 0;
+            word-wrap: break-word;
+            width: 100%;
+
             
             &__parrafo{
                 width: 98%;
                 margin-right: 0;
-                margin-left: 0;
                 overflow-x: hidden;
             }
         }
@@ -81,6 +84,10 @@
             padding: 0;          
             border: 0;            
         }
+    }
+
+    .card{
+        margin-left:  0;
     }
 
     /*formulario*/
