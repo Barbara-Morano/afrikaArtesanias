@@ -15,10 +15,10 @@
         margin-right: 0;
         margin-left: 0;
         padding: 0;
-        overflow-x: hidden;
+        
     }
 
-    .header{    
+    .header{   
         &__portada{  
             padding: 15px;  
             margin: 0;            
@@ -39,10 +39,16 @@
     .titulo{
         font-size: 10px;        
         margin-left: 0;
+        overflow-x: hidden;
+    }
+
+    .main{
+        overflow-x: hidden;
     }
 
     .introduccion{
         display: inline; 
+        overflow-x: hidden;
 
         &__texto{
             margin-right: 0;
@@ -52,6 +58,7 @@
                 width: 98%;
                 margin-right: 0;
                 margin-left: 0;
+                overflow-x: hidden;
             }
         }
 
@@ -68,6 +75,7 @@
     .productos{            
         margin-left: 0;
         padding-left: 0;
+        overflow-x: hidden;
         
         &__lamparas{
             padding: 0;          
@@ -75,13 +83,11 @@
         }
     }
 
-    .card{ 
-        margin-left: 30px;
-    }
-
     /*formulario*/
 
     .formulario{
+        overflow-x: hidden;
+
         &__titulo{
             margin-bottom: 10px;
         

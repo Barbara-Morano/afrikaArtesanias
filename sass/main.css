@@ -347,7 +347,6 @@
     margin-right: 0;
     margin-left: 0;
     padding: 0;
-    overflow-x: hidden;
   }
   .header__portada {
     padding: 15px;
@@ -365,9 +364,14 @@
   .titulo {
     font-size: 10px;
     margin-left: 0;
+    overflow-x: hidden;
+  }
+  .main {
+    overflow-x: hidden;
   }
   .introduccion {
     display: inline;
+    overflow-x: hidden;
   }
   .introduccion__texto {
     margin-right: 0;
@@ -377,6 +381,7 @@
     width: 98%;
     margin-right: 0;
     margin-left: 0;
+    overflow-x: hidden;
   }
   .introduccion__imagen {
     margin: 0;
@@ -388,15 +393,16 @@
   .productos {
     margin-left: 0;
     padding-left: 0;
+    overflow-x: hidden;
   }
   .productos__lamparas {
     padding: 0;
     border: 0;
   }
-  .card {
-    margin-left: 30px;
-  }
   /*formulario*/
+  .formulario {
+    overflow-x: hidden;
+  }
   .formulario__titulo {
     margin-bottom: 10px;
   }
