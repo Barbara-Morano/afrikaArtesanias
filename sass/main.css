@@ -345,25 +345,26 @@
   /*Home*/
   * {
     margin-right: 0;
+    margin-left: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   .header__portada {
-    margin-left: 0;
-    padding: 20px;
+    padding: 15px;
+    margin: 0;
   }
   .header__portada__logo {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
   }
   .header__portada__h1 {
-    font-size: 70px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    font-size: 4px;
+    margin: 0;
+    padding: 0;
   }
   .titulo {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 10px;
+    margin-left: 0;
   }
   .introduccion {
     display: inline;
@@ -373,7 +374,7 @@
     padding: 0;
   }
   .introduccion__texto__parrafo {
-    width: 100%;
+    width: 98%;
     margin-right: 0;
     margin-left: 0;
   }
@@ -391,6 +392,9 @@
   .productos__lamparas {
     padding: 0;
     border: 0;
+  }
+  .card {
+    margin-left: 30px;
   }
   /*formulario*/
   .formulario__titulo {
@@ -415,28 +419,39 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+  .nosotros__parrafo {
+    overflow: hidden;
+    margin-right: 0;
+    padding: 0;
+    margin-left: -80px;
   }
   .nosotros__lampara {
     display: none;
   }
   .nosotros__portavela {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 15px;
+    display: none;
   }
   .nosotros__texto {
     margin-top: 10px;
-    margin-left: 0px;
+    margin-left: 0;
+    overflow-x: hidden;
+    margin-right: 0;
     width: 100%;
+    padding: 0;
   }
   /*preguntas frecuentes*/
   .accordion-item {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 10px;
   }
   .accordion-button {
     margin-left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     width: 100%;
   }
   .acordion__texto {
