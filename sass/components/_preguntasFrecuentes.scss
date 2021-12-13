@@ -14,17 +14,16 @@
     border:$color-secundario;   
     @include margenes (0, 0, 30px, 30px);
     
-    &:focus{
-        background-color: $color-acordeon;
-        color: $color-secundario;  
-        outline: none;
-        box-shadow: none;      
-    }
-    
     &:active{
         color: $color-secundario;
         border: none;
-        background-color: $color-acordeon;        
+        background-color: $color-acordeon; 
+        outline: 0;       
+    }
+
+    &:focus{
+        border: none;
+        box-shadow: none;
     }
 }
 
@@ -46,4 +45,3 @@
         margin-left: 20px;         
     }
 }
-
