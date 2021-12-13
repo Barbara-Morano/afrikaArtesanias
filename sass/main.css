@@ -1,10 +1,7 @@
-/*variables*/
-/* Extend */
 .card {
   border: solid 1px #333d29;
 }
 
-/* Mixin */
 /*general*/
 * {
   margin: 0;
@@ -341,6 +338,7 @@
   font-weight: 400;
 }
 
+/* Media */
 @media only screen and (max-width: 768px) {
   /*Home*/
   * {
@@ -357,9 +355,10 @@
     height: 70px;
   }
   .header__portada__h1 {
-    font-size: 4px;
     margin: 0;
     padding: 0;
+    height: auto;
+    text-align: center;
   }
   .titulo {
     font-size: 10px;
@@ -378,9 +377,10 @@
     padding: 0;
     margin-left: 0;
     word-wrap: break-word;
+    width: auto;
   }
   .introduccion__texto__parrafo {
-    width: 98%;
+    width: 97%;
     margin-right: 0px;
     margin-left: 0;
     overflow-x: hidden;
@@ -434,12 +434,14 @@
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+    width: 100%;
   }
   .nosotros__parrafo {
-    overflow: hidden;
     margin-right: 0;
     padding: 0;
     margin-left: -80px;
+    width: 100%;
+    word-wrap: break-word;
   }
   .nosotros__lampara {
     display: none;
@@ -450,7 +452,6 @@
   .nosotros__texto {
     margin-top: 10px;
     margin-left: 0;
-    overflow-x: hidden;
     margin-right: 0;
     width: 100%;
     padding: 0;
