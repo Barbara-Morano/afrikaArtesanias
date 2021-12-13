@@ -5,14 +5,16 @@
     *{
         margin-right: 0;
         margin-left: 0;
-        padding: 0;
+        padding: 0;      
         
     }
 
     .header{   
         &__portada{  
             padding: 15px;  
-            margin: 0;            
+            margin: 0; 
+            width: auto;
+            overflow-x: hidden;           
 
             &__logo{
                 width: 70px; 
@@ -24,6 +26,7 @@
                 padding: 0;
                 height: auto;
                 text-align: center;
+                width: auto;
                 }
             }
     }
@@ -32,6 +35,7 @@
         font-size: 10px;        
         margin-left: 0;
         overflow-x: hidden;
+        
     }
 
     .main{
@@ -41,6 +45,7 @@
     .introduccion{
         display: inline; 
         overflow-x: hidden;
+        width: 100%;
         
 
         &__texto{
@@ -117,17 +122,14 @@
         margin-right: 0;
         padding: 0;
         width: 100%;
-
-        
+        overflow-x: hidden;        
 
         &__parrafo{            
-            margin-right: 0;
+            margin-right: 10px;
             padding: 0;
-            margin-left: -80px;   
-            width: 100%;  
-            word-wrap: break-word;            
+            margin-left: -90px;           
+            width: 97%;                       
         }
-
 
         &__lampara{
             display: none;
@@ -141,7 +143,7 @@
             margin-top: 10px;
             margin-left: 0;            
             margin-right: 0;            
-            width: 100%;
+            width: 97%;
             padding: 0;                    
         }
     }
@@ -257,20 +259,29 @@
     .nosotros{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+
+        &__parrafo{
+            width: 100%;
+            padding: 0;
+            margin-left: -80px;
+        }
 
         &__lampara{
             display: none;
         }
 
         &__portavela{
-            width: 90%;
-            margin-left: 20px;
-            margin-right: 15px;
+            width: 90%;            
+            margin-left: 50px;
+            margin-right: 0;
+            overflow-x: hidden;
         }  
         
         &__texto{
             margin-top: 10px;
-            margin-left: 10px;            
+            margin-left: 0;            
             width: 100%;
         }
     }
@@ -384,6 +395,11 @@
         display: flex;
         flex-direction: column;
 
+        &__parrafo{
+            width: 100%;
+            padding: 0;            
+        }
+
         &__lampara{
             display: none;
         }
@@ -393,12 +409,11 @@
             margin-left: 100px; 
             margin-right: 0;          
 
-        &__portavela{            
-            width: 100%;
-            margin-left: 100px;
-            margin-right: 150px;
-            padding: 150px;
-            }  
+        &__portavela{
+            width: 90%;            
+            margin-right: 0;
+            overflow-x: hidden;
+            }   
         }
     }
 
